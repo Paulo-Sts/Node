@@ -29,3 +29,6 @@ npm -v
 
 > #### EVENT-LOOP
 * Sendo orientado a eventos o Node trabalha com ações baseadas na entrada e saída de dados do servidor. O event-loop atua ouvindo e emitindo eventos quando esses são criados, definindo uma fila de eventos em que a cada iteração e verificado o estado de eventos e os redirecionando de acordo com sua execução para a fila de eventos executados.
+
+> #### MÓDULOS
+* As aplicações Node, são construídas a partir de módulos, pois sua arquitetura é modular. Os módulos de uma aplicação possuem um arquivo package.json que é o arquivo descritor de configurações fundamentais para o funcionamento correto do módulo. 
