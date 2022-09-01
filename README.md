@@ -16,3 +16,16 @@ node -v
 ~~~ 
 npm -v
 ~~~  
+
+<br>
+
+## Introdução
+
+> #### DEFINIÇÃO
+* O NodeJs é um software criado a partir do interpretador V8, que possibilita a execução de código utilizando javascript, fora dos navegadores. Possibilitando assim a construção de aplicações do lado do servidor. 
+
+> #### SINGLE-THREAD
+* As aplicações desenvolvidas com o NodeJs, funcionam utilizando de single-threads, ou seja, cada aplicação possui uma instância de apenas um processo. O NodeJs possui uma arquitetura não bloqueante (non-blocking thread) o que lhe da uma boa performance utilizando o máximo de poder de processamento dos servidores de forma eficiente.
+
+> #### EVENT-LOOP
+* Sendo orientado a eventos o Node trabalha com ações baseadas na entrada e saída de dados do servidor. O event-loop atua ouvindo e emitindo eventos quando esses são criados, definindo uma fila de eventos em que a cada iteração e verificado o estado de eventos e os redirecionando de acordo com sua execução para a fila de eventos executados.
