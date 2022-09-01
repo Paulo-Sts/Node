@@ -4,3 +4,15 @@
 
 # NodeJs
 Conceitos e como utilizar o ambiente de execução Javascript.
+
+<br>
+
+> #### Versão NodeJs
+~~~ 
+node -v
+~~~  
+
+> #### Versão Npm
+~~~ 
+npm -v
+~~~  
