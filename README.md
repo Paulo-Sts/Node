@@ -19,6 +19,13 @@ npm -v
 
 <br>
 
+> #### Criar Projeto NodeJs
+~~~ 
+npm init -y
+~~~  
+
+<br>
+
 ## Introdução
 
 > #### DEFINIÇÃO
@@ -32,3 +39,8 @@ npm -v
 
 > #### MÓDULOS
 * As aplicações Node, são construídas a partir de módulos, pois sua arquitetura é modular. Os módulos de uma aplicação possuem um arquivo package.json que é o arquivo descritor de configurações fundamentais para o funcionamento correto do módulo. 
+
+## Aplicações Web
+
+> #### APLICAÇÃO MIDDLEWARE
+* No processo de criação de aplicações web, é necessário a disponibilidade de um servidor. Em NodeJs, a construção de aplicações passa pelo que é chamado de aplicação middleware, que consiste além de desenvolver as funcionalidades, também implementar as configurações de infraestrutura.
