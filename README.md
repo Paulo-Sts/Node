@@ -57,3 +57,6 @@ npm init -y
 > #### SERVIDOR NODE
 * O servidor Node funciona através do mecanismo de event loop, esse que é responsável por gerenciar a emissão de eventos. Em outras palavras através de funções nativas é instanciado um novo servidor, esse servidor possui um callback que é executado apenas quando o servidor é chamado, ou seja, quando o servidor recebe uma requisição. Para verificar a existência de uma requisição o Event loop fica monitorando se o servidor foi requisitado, quando isso ocorre é emitido um evento para que seja executado o seu callback.
 * O Node trabalha muito com funções assíncronas que respondem através de funções callbacks do javascript. Em resumo o servidor criado fica escutando até ser chamado e quando ele é chamado invoca uma função callback que executa uma determinada função.
+
+> #### CHAMADAS ASSÍNCRONAS
+* O desenvolvimento assíncrono é muito comum na construção de aplicações com Node, pois ele possibilita maior eficiência na execução simultânea de chamadas ao servidor. A grande vantagem da programação assíncrona é o fato de que é possível executar uma rotina diversas vezes ao mesmo tempo de forma paralela e não bloqueante. 
