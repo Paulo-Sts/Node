@@ -60,3 +60,15 @@ npm init -y
 
 > #### CHAMADAS ASSÍNCRONAS
 * O desenvolvimento assíncrono é muito comum na construção de aplicações com Node, pois ele possibilita maior eficiência na execução simultânea de chamadas ao servidor. A grande vantagem da programação assíncrona é o fato de que é possível executar uma rotina diversas vezes ao mesmo tempo de forma paralela e não bloqueante. 
+
+## Express
+
+> #### Instalar Express 
+~~~ 
+npm install express --save
+~~~  
+
+> #### Instalar Express Globalmente
+~~~ 
+npm install -g express
+~~~  
