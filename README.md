@@ -37,7 +37,7 @@ Conceitos e como utilizar o ambiente de execução Javascript.
 * O Yarn é um gerenciador de pacotes, utilizado para aplicar comandos pré-definidos ao código de uma aplicação e gerenciar recursos. Entre as suas vantagens estão a maior estabilidade, maior organização, praticidade, segurança e padronização. Pode-se utilizar tanto o yarn como o npm para a criação e gerenciamento de projetos com o node.
 
 
-> #### COMANDOS NODE
+> #### COMANDOS
 
 ##### VERSÃO NODE
 ~~~ 
@@ -68,6 +68,21 @@ npm init -y
   - Tratamento de exceções dentro da aplicação
   - Integração de vários sistemas de templates de páginas web
   - Gerenciamento de requisições HTTP
+
+> #### CRIANDO SERVIDOR
+* Inicialmente é preciso criar uma instância express, ou seja, um objeto do tipo express. O express é o responsável por gerar uma aplicação express através de uma função de alto nível do módulo express.
+* Para Criar uma conexão é necessário utilizar o método listen, que tem como parâmetros um número de porta e um retorno de chamada. Após criada a conexão ficará escutando chamadas pelo caminho determinado.
+
+##### CÓDIGO
+~~~ 
+import express from 'express'
+const app = express()
+const port = 3000
+
+app.listen(port, () => {
+    console.log(`Servidor rodando! Porta ${port}`)
+})
+~~~  
 
 > #### COMANDOS
 
