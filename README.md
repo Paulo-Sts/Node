@@ -34,7 +34,7 @@ Conceitos e como utilizar o ambiente de execução Javascript.
 * O Npm é o gerenciador de pacotes padrão do Node. Com ele é possível definir configurações dos projetos e gerenciar dependências do sistema.
 
 > #### YARN
-* O Yarn é um gerenciador de pacotes, utilizado para aplicar comandos pré-definidos ao código de uma aplicação e gerenciar recursos. Entre as suas vantagens estão a maior estabilidade, maior organização, praticidade, segurança e padronização.
+* O Yarn é um gerenciador de pacotes, utilizado para aplicar comandos pré-definidos ao código de uma aplicação e gerenciar recursos. Entre as suas vantagens estão a maior estabilidade, maior organização, praticidade, segurança e padronização. Pode-se utilizar tanto o yarn como o npm para a criação e gerenciamento de projetos com o node.
 
 
 > #### COMANDOS NODE
