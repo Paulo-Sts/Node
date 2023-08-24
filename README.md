@@ -91,6 +91,10 @@ app.listen(port, () => {
 "dev": "node nome-arquivo"
 ~~~
 
+> #### ROTEAMENTO
+
+<br>
+
 > #### COMANDOS
 
 ##### INSTALAR EXPRESS
