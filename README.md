@@ -2,7 +2,7 @@
     <img align="left" height="110" width="300" alt="TypeScript" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg">
 </div>
 
-# NODEJS
+# NodeJs
 Conceitos e como utilizar o ambiente de execução Javascript.
 
 <br>
