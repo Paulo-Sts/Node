@@ -7,7 +7,9 @@ Conceitos e como utilizar o ambiente de execução Javascript.
 
 <br>
 
-## DEFINIÇÃO
+## CONCEITOS
+
+> ### Node
 * O NodeJs é um software criado a partir do interpretador V8, que possibilita a execução de código utilizando javascript, fora dos navegadores. Dessa forma torna-se realizável a construção de aplicações do lado do servidor com a linguagem javascript. 
 
 > ### Single-thread
@@ -23,7 +25,6 @@ Conceitos e como utilizar o ambiente de execução Javascript.
 ```json
 "type": "module"
 ```
-
 > ### Aplicação middleware
 * No processo de criação de aplicações web, é necessário a disponibilidade de um servidor. Em NodeJs, a construção de aplicações passa pelo que é chamado de aplicação middleware, que consiste em desenvolver as funcionalidades e também implementar as configurações de infraestrutura.
 
@@ -40,31 +41,31 @@ Conceitos e como utilizar o ambiente de execução Javascript.
 > ### Yarn
 * O Yarn é um gerenciador de pacotes, utilizado para aplicar comandos pré-definidos ao código de uma aplicação e gerenciar recursos. Entre as suas vantagens estão a maior estabilidade, maior organização, praticidade, segurança e padronização. Pode-se utilizar tanto o yarn como o npm para a criação e gerenciamento de projetos com o node.
 
-> ### COMANDOS
+## COMANDOS
 
-##### VERSÃO NODE
+#### Versão do node
 ~~~ 
 node -v
 ~~~  
 
-##### VERSÃO NPM
+#### Versão do npm
 ~~~ 
 npm -v
 ~~~  
 
-##### ACESSAR O NODE PELO TERMINAL
+#### Acessar node pelo terminal
 ~~~ 
 node
 ~~~  
 
-##### CRIAR PROJETO NODE COM NPM
+##### Criar projeto node com npm
 ~~~ 
 npm init -y
 ~~~  
 
 <br>
 
-## Express
+## EXPRESS
 * O express é um framework para o desenvolvimento de aplicações javascript com o NodeJs. Se trata de um conjunto de recursos que facilitam a criação de servidores web.
 * Alguns dos seus recursos:
   - Sistema de roteamento
@@ -72,12 +73,12 @@ npm init -y
   - Integração de vários sistemas de templates de páginas web
   - Gerenciamento de requisições HTTP
 
-> #### CRIANDO SERVIDOR
+> ### Criação de servidor
 * Inicialmente é preciso criar uma instância express, ou seja, um objeto do tipo express. O express é o responsável por gerar uma aplicação express através de uma função de alto nível do módulo express.
 * Para criar uma conexão é necessário utilizar o método ***listen***, que tem como parâmetros um número de porta e um retorno de chamada. Após criada, a conexão ficará escutando chamadas pelo caminho determinado.
 * Para ligar o servidor é necessário executar um comando, esse pode ser manualmente chamando o node, ou pode-se definir um comando de execução nas configurações do arquivo package.json, que chama o node via npm.
 
-##### CÓDIGO
+#### Código
 ~~~ 
 import express from 'express'
 const app = express()
@@ -88,24 +89,23 @@ app.listen(port, () => {
 })
 ~~~  
 
-> ##### Script de execução do servidor via package.json
-
+#### Script de execução do servidor via package.json
 ~~~
 "dev": "node nome-arquivo"
 ~~~
 
-> #### ROTEAMENTO
+### Roteamento
 
 <br>
 
-> #### COMANDOS
+> ### Comandos
 
-##### INSTALAR EXPRESS
+#### Instalar express
 ~~~ 
 npm install express --save
 ~~~  
 
-##### INSTALAR EXPRESS DE FORMA GLOBAL
+#### Instalar express de forma global
 ~~~ 
 npm install -g express
 ~~~  
