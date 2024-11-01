@@ -22,13 +22,6 @@ Conceitos e como utilizar o ambiente de execução Javascript.
 > ### Event-loop
 * Sendo orientado a eventos o Node trabalha com ações baseadas na entrada e saída de dados do servidor. O event-loop atua ouvindo e emitindo eventos quando esses são criados, definindo uma fila de eventos em que a cada iteração é verificado o estado dos eventos, os redirecionando de acordo com sua execução para a fila de eventos executados.
 
-> ### Módulos
-* As aplicações Node, são construídas a partir de módulos, pois sua arquitetura é modular. Os módulos de uma aplicação possuem um arquivo package.json que é o arquivo descritor de configurações fundamentais para o funcionamento correto dos módulos.
-*  Por padrão o sistema de módulos do Node utiliza o commonJs, porém com o ES6 agora é possível importar módulos utilizando o ***import*** e o ***export default***. Para alterar o padrão basta adicionar no final do arquivo package.json o tipo de importação de módulos do ES6.
-
-```json
-"type": "module"
-```
 > ### Aplicação middleware
 * No processo de criação de aplicações web, é necessário a disponibilidade de um servidor. Em NodeJs, a construção de aplicações passa pelo que é chamado de aplicação middleware, que consiste em desenvolver as funcionalidades e também implementar as configurações de infraestrutura.
 
@@ -45,38 +38,13 @@ Conceitos e como utilizar o ambiente de execução Javascript.
 > ### Yarn
 * O Yarn é um gerenciador de pacotes, utilizado para aplicar comandos pré-definidos ao código de uma aplicação e gerenciar recursos. Entre as suas vantagens estão a maior estabilidade, maior organização, praticidade, segurança e padronização. Pode-se utilizar tanto o yarn como o npm para a criação e gerenciamento de projetos com o node.
 
-<br>
-
-## EXPRESS
+> ### Express
 * O express é um framework para o desenvolvimento de aplicações javascript com o NodeJs. Se trata de um conjunto de recursos que facilitam a criação de servidores web.
 * Alguns dos seus recursos:
   - Sistema de roteamento
   - Tratamento de exceções dentro da aplicação
   - Integração de vários sistemas de templates de páginas web
   - Gerenciamento de requisições HTTP
-
-> ### Criação de servidor
-* Inicialmente é preciso criar uma instância express, ou seja, um objeto do tipo express. O express é o responsável por gerar uma aplicação express através de uma função de alto nível do módulo express.
-* Para criar uma conexão é necessário utilizar o método ***listen***, que tem como parâmetros um número de porta e um retorno de chamada. Após criada, a conexão ficará escutando chamadas pelo caminho determinado.
-* Para ligar o servidor é necessário executar um comando, esse pode ser manualmente chamando o node, ou pode-se definir um comando de execução nas configurações do arquivo package.json, que chama o node via npm.
-
-#### Código
-~~~ 
-import express from 'express'
-const app = express()
-const port = 3000
-
-app.listen(port, () => {
-    console.log(`Servidor rodando! Porta ${port}`)
-})
-~~~  
-
-#### Script de execução do servidor via package.json
-~~~
-"dev": "node nome-arquivo"
-~~~
-
-### Roteamento
 
 <br>
 
