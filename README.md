@@ -51,7 +51,8 @@ Conceitos e como utilizar o ambiente de execução Javascript.
 ## PROJETOS NODE NA PRÁTICA
 
 > ### Organização Geral
-* Organização Diretórios 
-* Instalação Node
-* Instalação Express
-* 
+* [Organização dos Diretórios](/tutoriais/01-organizacao-geral/01-organizacao-diretorios.md) 
+* [Configuração do Node](/tutoriais/01-organizacao-geral/02-configuracao-node.md)
+* [Configuração do Express](/tutoriais/01-organizacao-geral/03-configuracao-express.md)
+* [Inicialização do Projeto](/tutoriais/01-organizacao-geral/04-iniciando-projeto.md)
+* [Criação de Servidos](/tutoriais/01-organizacao-geral/05-criacao-de-servidor.md)
