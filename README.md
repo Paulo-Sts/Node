@@ -64,6 +64,25 @@ Conceitos e como utilizar o ambiente de execução Javascript.
 ## ORGANIZAÇÃO GERAL DE PROJETOS NODE
 
 > ### Estrutura das pastas
+* A estrutura das pastas serve para organizar todo o código desenvolvido no projeto. O objetivo é construir uma estrutura de fácil entendimento e escalabilidade.
+
+#### Modelo de organização das pastas
+- **src**  
+  -  app.js          (Classe app)  
+  -  server.js       (Server para iniciar o app)
+  - **api**               
+    - controllers   (Funções da controllers do express route)  
+    - models        (Modelos do banco de dados)  
+    - services      (Regras de negócio)  
+    - subscribers   (Eventos async)   
+    - repositories  (Query builders)   
+- **config**          (Configuração das variaveis de ambiente)  
+- **jobs**            (Tarefas de rotinas)  
+- **loaders**         (Modulos para utilizado no app)  
+- **utils**           (Trechos de código pequeno)  
+- **helpers**         (Trechos de arquitetura de código)  
+- **routes**          (Definição de rotas express)  
+- **types**           (Tipagem (d.ts) para Typescript)  
 
 > ### Configuração do node
 
@@ -120,7 +139,7 @@ npm init
 * Para ligar o servidor é necessário executar um comando, esse pode ser manualmente chamando o node, ou pode-se definir um comando de execução nas configurações do arquivo package.json, que chama o node via npm.
 
 #### Código
-~~~ 
+~~~javascript 
 import express from 'express'
 const app = express()
 const port = 3000
