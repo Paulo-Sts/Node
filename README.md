@@ -150,6 +150,6 @@ app.listen(port, () => {
 ~~~  
 
 #### Script de execução do servidor via package.json
-~~~
+```json
 "dev": "node nome-arquivo"
-~~~
+```
