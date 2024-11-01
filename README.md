@@ -101,7 +101,7 @@ npm -v
 node
 ~~~  
 
-> ### Configuração do express
+> ### Configuração framework express
 
 #### Instalar express
 ~~~ 
@@ -127,6 +127,13 @@ npm init -y
 ```json
 "type": "module"
 ```
+
+> ### Instalar nodemon (opcional)
+* O nodemon é uma dependência que atualiza automaticamente o servidor após realizada alguma modificação no código.
+* É útil durante a etapa de desenvolvimento.
+~~~
+npm install --save-dev nodemon
+~~~
 
 > ### Criação de servidor
 * Inicialmente é preciso criar uma instância express, ou seja, um objeto do tipo express. O express é o responsável por gerar uma aplicação express através de uma função de alto nível do módulo express.
