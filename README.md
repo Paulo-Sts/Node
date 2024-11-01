@@ -45,28 +45,6 @@ Conceitos e como utilizar o ambiente de execução Javascript.
 > ### Yarn
 * O Yarn é um gerenciador de pacotes, utilizado para aplicar comandos pré-definidos ao código de uma aplicação e gerenciar recursos. Entre as suas vantagens estão a maior estabilidade, maior organização, praticidade, segurança e padronização. Pode-se utilizar tanto o yarn como o npm para a criação e gerenciamento de projetos com o node.
 
-## COMANDOS
-
-#### Versão do node
-~~~ 
-node -v
-~~~  
-
-#### Versão do npm
-~~~ 
-npm -v
-~~~  
-
-#### Acessar node pelo terminal
-~~~ 
-node
-~~~  
-
-##### Criar projeto node com npm
-~~~ 
-npm init -y
-~~~  
-
 <br>
 
 ## EXPRESS
@@ -101,18 +79,6 @@ app.listen(port, () => {
 ### Roteamento
 
 <br>
-
-> ### Comandos
-
-#### Instalar express
-~~~ 
-npm install express --save
-~~~  
-
-#### Instalar express de forma global
-~~~ 
-npm install -g express
-~~~  
 
 ## PROJETOS NODE NA PRÁTICA
 

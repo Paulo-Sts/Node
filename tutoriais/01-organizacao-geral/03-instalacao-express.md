@@ -1,3 +1,0 @@
-# Organização Geral
-
-<br>
