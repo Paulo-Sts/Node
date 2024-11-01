@@ -135,6 +135,11 @@ npm init -y
 npm install --save-dev nodemon
 ~~~
 
+#### Script de execução do servidor via package.json com o nodemon
+```json
+"dev": "nodemon nome-arquivo"
+```
+
 > ### Criação de servidor
 * Inicialmente é preciso criar uma instância express, ou seja, um objeto do tipo express. O express é o responsável por gerar uma aplicação express através de uma função de alto nível do módulo express.
 * Para criar uma conexão é necessário utilizar o método ***listen***, que tem como parâmetros um número de porta e um retorno de chamada. Após criada, a conexão ficará escutando chamadas pelo caminho determinado.
@@ -149,9 +154,15 @@ const port = 3000
 app.listen(port, () => {
     console.log(`Servidor rodando! Porta ${port}`)
 })
-~~~  
+~~~
 
 #### Script de execução do servidor via package.json
 ```json
 "dev": "node nome-arquivo"
 ```
+
+> ### Conectar com banco de dados
+
+> ### Criar models
+
+> ### Criar rotas
