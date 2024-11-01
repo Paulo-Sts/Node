@@ -101,11 +101,6 @@ npm -v
 node
 ~~~  
 
-##### Criar projeto node com npm
-~~~ 
-npm init -y
-~~~  
-
 > ### Configuração do express
 
 #### Instalar express
@@ -122,7 +117,7 @@ npm install -g express
 * É preciso criar o diretório onde será realizado o projeto node.
 * Após isso entrar no diretório e inicializar o projeto.
 ~~~
-npm init
+npm init -y
 ~~~
 
 #### Sistema de módulos
