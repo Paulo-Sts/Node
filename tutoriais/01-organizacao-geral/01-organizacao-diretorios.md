@@ -1,5 +1,0 @@
-# Organização Diretórios
-
-<br>
-
-## ESTRUTURA 

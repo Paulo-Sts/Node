@@ -7,6 +7,19 @@ Conceitos e como utilizar o ambiente de execução Javascript.
 
 <br>
 
+## SUMÁRIO
+
+> ### Parte 1 - Conceitos
+
+
+
+> ### Parte 2 - Organização Geral de Projetos Node
+* [Organização dos Diretórios]() 
+* [Configuração do Node]()
+* [Configuração do Express]()
+* [Inicialização do Projeto]()
+* [Criação de Servidos]()
+
 #### Referências
 * [Site Node](https://nodejs.org/pt)
 * [Site Express](https://expressjs.com/)
@@ -48,11 +61,76 @@ Conceitos e como utilizar o ambiente de execução Javascript.
 
 <br>
 
-## PROJETOS NODE NA PRÁTICA
+## ORGANIZAÇÃO GERAL DE PROJETOS NODE
 
-> ### Organização Geral
-* [Organização dos Diretórios](/tutoriais/01-organizacao-geral/01-organizacao-diretorios.md) 
-* [Configuração do Node](/tutoriais/01-organizacao-geral/02-configuracao-node.md)
-* [Configuração do Express](/tutoriais/01-organizacao-geral/03-configuracao-express.md)
-* [Inicialização do Projeto](/tutoriais/01-organizacao-geral/04-iniciando-projeto.md)
-* [Criação de Servidos](/tutoriais/01-organizacao-geral/05-criacao-de-servidor.md)
+> ### Estrutura das pastas
+
+> ### Configuração do node
+
+#### Versão do node
+~~~ 
+node -v
+~~~  
+
+#### Versão do npm
+~~~ 
+npm -v
+~~~  
+
+#### Acessar node pelo terminal
+~~~ 
+node
+~~~  
+
+##### Criar projeto node com npm
+~~~ 
+npm init -y
+~~~  
+
+> ### Configuração do express
+
+#### Instalar express
+~~~ 
+npm install express --save
+~~~  
+
+#### Instalar express de forma global
+~~~ 
+npm install -g express
+~~~  
+
+> ### Criação de projeto
+* É preciso criar o diretório onde será realizado o projeto node.
+* Após isso entrar no diretório e inicializar o projeto.
+~~~
+npm init
+~~~
+
+#### Sistema de módulos
+* As aplicações Node, são construídas a partir de módulos, pois sua arquitetura é modular. Os módulos de uma aplicação possuem um arquivo package.json que é o arquivo descritor de configurações fundamentais para o funcionamento correto dos módulos.
+*  Por padrão o sistema de módulos do Node utiliza o commonJs, porém com o ES6 agora é possível importar módulos utilizando o ***import*** e o ***export default***. Para alterar o padrão basta adicionar no final do arquivo package.json o tipo de importação de módulos do ES6.
+
+```json
+"type": "module"
+```
+
+> ### Criação de servidor
+* Inicialmente é preciso criar uma instância express, ou seja, um objeto do tipo express. O express é o responsável por gerar uma aplicação express através de uma função de alto nível do módulo express.
+* Para criar uma conexão é necessário utilizar o método ***listen***, que tem como parâmetros um número de porta e um retorno de chamada. Após criada, a conexão ficará escutando chamadas pelo caminho determinado.
+* Para ligar o servidor é necessário executar um comando, esse pode ser manualmente chamando o node, ou pode-se definir um comando de execução nas configurações do arquivo package.json, que chama o node via npm.
+
+#### Código
+~~~ 
+import express from 'express'
+const app = express()
+const port = 3000
+
+app.listen(port, () => {
+    console.log(`Servidor rodando! Porta ${port}`)
+})
+~~~  
+
+#### Script de execução do servidor via package.json
+~~~
+"dev": "node nome-arquivo"
+~~~
