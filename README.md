@@ -7,6 +7,10 @@ Conceitos e como utilizar o ambiente de execução Javascript.
 
 <br>
 
+#### Referências
+* [Site Node](https://nodejs.org/pt)
+* [Site Express](https://expressjs.com/)
+
 ## CONCEITOS
 
 > ### Node
@@ -109,3 +113,11 @@ npm install express --save
 ~~~ 
 npm install -g express
 ~~~  
+
+## PROJETOS NODE NA PRÁTICA
+
+> ### Organização Geral
+* Organização Diretórios 
+* Instalação Node
+* Instalação Express
+* 
