@@ -226,7 +226,7 @@ npm install --save-dev nodemon
 
 > ### Criação de models
 
-> ### Criação de middleware
+> ### Criação de middleware de autenticação e acesso
 
 > ### Criação de rotas
 
@@ -235,8 +235,6 @@ npm install --save-dev nodemon
 > ### Criação de services
 
 > ### Criação de repositories
-
-> ### Autenticação
 
 > ### Gerenciamento de estado
 
