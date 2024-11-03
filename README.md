@@ -126,6 +126,7 @@ npm init -y
 #### Sistema de módulos
 * As aplicações Node, são construídas a partir de módulos, pois sua arquitetura é modular. Os módulos de uma aplicação possuem um arquivo package.json que é o arquivo descritor de configurações fundamentais para o funcionamento correto dos módulos.
 *  Por padrão o sistema de módulos do Node utiliza o commonJs, porém com o ES6 agora é possível importar módulos utilizando o ***import*** e o ***export default***. Para alterar o padrão basta adicionar no final do arquivo package.json o tipo de importação de módulos do ES6.
+*  Os arquivos precisam da extensão .js ao importar, devido ao padrão de módulos ES6 no Node.js.
 
 ```json
 "type": "module"
@@ -180,7 +181,8 @@ const app = express()
 
 //Middlewares
 app.use(cors())
-app.use(express.json())
+app.use(express.json()) //Middleware do Express que permite à aplicação processar dados JSON enviados no corpo das requisições HTTP.
+app.use(express.urlencoded({ extended: true })) //Middleware do Express que processa dados de formulários
 
 export default app
 ~~~
