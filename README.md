@@ -131,7 +131,8 @@ npm init -y
 "type": "module"
 ```
 
-> ### Configuração dependências
+> ### Configuração do express
+* O express é um framework Node.js para construção de servidores web.
 
 #### Instalar express
 ~~~ 
@@ -142,23 +143,6 @@ npm install express --save
 ~~~ 
 npm install -g express
 ~~~  
-
-#### Instalar cors
-~~~
-npm install cors
-~~~
-
-> ### Instalar nodemon (opcional)
-* O nodemon é uma dependência que atualiza automaticamente o servidor após realizada alguma modificação no código.
-* É útil durante a etapa de desenvolvimento.
-~~~
-npm install --save-dev nodemon
-~~~
-
-#### Script de execução do servidor via package.json com o nodemon
-```json
-"dev": "nodemon nome-arquivo"
-```
 
 > ### Criação de servidor
 * Inicialmente é preciso criar uma instância express, ou seja, um objeto do tipo express. O express é o responsável por gerar uma aplicação express através de uma função de alto nível do módulo express.
@@ -182,6 +166,54 @@ app.listen(port, () => {
 ```
 
 ## API RESTful
+
+> ### Modularização do servidor
+* No desenvolvimento de servidores usando o express, visando a organização divide-se os módulos em ***app.js*** responsável pelas configurações do express e o ***server.js*** responsável por iniciar o servidor.
+
+#### Módulo app.js
+~~~js
+import express from 'express'
+import cors from 'cors'
+
+const app = express()
+
+//Middlewares
+app.use(cors())
+app.use(express.json())
+
+export default app
+~~~
+
+#### Módulo server.js
+~~~js
+import app from './app.js'
+
+const PORT = process.env.PORT || 3000
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`)
+})
+~~~
+
+> ### Instalação de dependências
+
+#### Instalar cors
+* O cors é uma dependência responsável por controlar quais domínios externos podem acessar a API.
+~~~
+npm install cors
+~~~
+
+#### Instalar nodemon (opcional)
+* O nodemon é uma dependência que atualiza automaticamente o servidor após realizada alguma modificação no código.
+* É útil durante a etapa de desenvolvimento.
+~~~
+npm install --save-dev nodemon
+~~~
+
+#### Script de execução do servidor via package.json com o nodemon
+```json
+"dev": "nodemon src/nome-arquivo"
+```
 
 > ### Conexão com banco de dados
 
