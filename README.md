@@ -168,7 +168,8 @@ app.listen(port, () => {
 ## API RESTful
 
 > ### Modularização do servidor
-* No desenvolvimento de servidores usando o express, visando a organização divide-se os módulos em ***app.js*** responsável pelas configurações do express e o ***server.js*** responsável por iniciar o servidor.
+* No desenvolvimento de servidores usando o express, para maior organização divide-se a instância do servidor em dois módulos ***app.js*** e ***server.js***.
+* O ***app.js*** é responsável pelas configurações do express, middlewares e rotas, enquanto o ***server.js*** é responsável por iniciar o servidor.
 
 #### Módulo app.js
 ~~~js
