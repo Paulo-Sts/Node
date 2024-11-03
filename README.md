@@ -116,18 +116,6 @@ npm -v
 node
 ~~~  
 
-> ### Configuração framework express
-
-#### Instalar express
-~~~ 
-npm install express --save
-~~~  
-
-#### Instalar express de forma global
-~~~ 
-npm install -g express
-~~~  
-
 > ### Criação de projeto
 * É preciso criar o diretório onde será realizado o projeto node.
 * Após isso entrar no diretório e inicializar o projeto.
@@ -142,6 +130,23 @@ npm init -y
 ```json
 "type": "module"
 ```
+
+> ### Configuração dependências
+
+#### Instalar express
+~~~ 
+npm install express --save
+~~~  
+
+#### Instalar express de forma global
+~~~ 
+npm install -g express
+~~~  
+
+#### Instalar cors
+~~~
+npm install cors
+~~~
 
 > ### Instalar nodemon (opcional)
 * O nodemon é uma dependência que atualiza automaticamente o servidor após realizada alguma modificação no código.
