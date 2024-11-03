@@ -22,8 +22,8 @@ Conceitos e como utilizar o ambiente de execução Javascript.
 > ### Parte 2 - Organização Geral de Projetos Node
 * [Organização dos Diretórios](#estrutura-das-pastas) 
 * [Configuração do Node](#configuração-do-node)
-* [Configuração do Express](#configuração-framework-express)
 * [Inicialização do Projeto](#criação-de-projeto)
+* [Configuração do Express](#configuração-do-express)
 * [Criação de Servidor](#criação-de-servidor)
 
 > ### Parte 2 - API RESTful
@@ -172,6 +172,7 @@ app.listen(port, () => {
 * No desenvolvimento de servidores usando o express, para maior organização divide-se a instância do servidor em dois módulos ***app.js*** e ***server.js***.
 * O ***app.js*** é responsável pelas configurações do express, middlewares e rotas, enquanto o ***server.js*** é responsável por iniciar o servidor.
 
+
 #### Módulo app.js
 ~~~js
 import express from 'express'
@@ -187,6 +188,8 @@ app.use(express.urlencoded({ extended: true })) //Middleware do Express que proc
 export default app
 ~~~
 
+***DICA:*** Uma boa prática para ganho de escalabilidade é definir a instância do express como uma classe (classe app).
+
 #### Módulo server.js
 ~~~js
 import app from './app.js'
@@ -197,6 +200,7 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })
 ~~~
+
 
 > ### Instalação de dependências
 
